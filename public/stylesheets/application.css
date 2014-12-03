@@ -1,0 +1,23 @@
+.hide{
+  display: none;
+}
+
+#addNewContactFormContainer{
+  display: none;
+}
+
+#errorMessage{
+  color: red;
+}
+
+#successMessage{
+  color: green;
+}
+
+#searchResult{
+  display: none;
+}
+
+#noMatchesMessage{
+  display: none;
+}

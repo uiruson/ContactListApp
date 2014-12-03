@@ -1,0 +1,96 @@
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#" id="populateContacts">My Contacts</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active" id="addNewContactButton"><a href="#">Add new Contact</a></li>
+    </ul>
+  </section>
+</nav>
+
+<br/>
+
+<div id="searchContactContainer">
+  <form id="searchContactForm">
+    <div class="row">
+      <div class="medium-6 large-centered columns">
+        <h4 id="errorMessage"></h4>
+      </div>
+      <div class="medium-6 large-centered columns">
+        <h3>Search Contact</h3>
+        <input type="text" name="searchKeyword" placeholder="search keyword" /> <input type="submit" class="button tiny" />
+      </div>
+      <div class="medium-8 large-centered columns" id="searchResult">
+        <h3>Search Result</h3>
+        <p id="noMatchesMessage"></p>
+        <table class="searchResultTable">
+        <thead>
+          <tr>
+            <th width="200">First Name</th>
+            <th width="200">Last Name</th>
+            <th width="200">Email</th>
+            <th width="200">Phone Number</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="medium-5 large-centered columns">
+  <h4 id="errorMessage"></h4>
+  <h4 id="successMessage"></h4>
+</div>
+<div id="addNewContactFormContainer">
+  <form id="addNewContactForm">
+    <div class="row">
+      <div class="medium-5 large-centered columns">
+        <h3>Add new Contact</h3>
+        <label>First Name
+          <input type="text" name="firstname" placeholder="first name" />
+        </label>
+        <label>Last Name
+          <input type="text" name="lastname" placeholder="last name" />
+        </label>
+        <label>Email
+          <input type="text" name="email" placeholder="email" />
+        </label>
+        <label>Phone Number
+          <input type="text" name="phone" placeholder="phone" />
+        </label>
+        <input type="submit" class="button tiny" />
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="contactList" class="hide">
+  <div class="row">
+    <div class="medium-8 large-centered columns">
+      <h2>Contact List</h2>
+      <table class="contactListTable">
+        <thead>
+          <tr>
+            <th width="200">First Name</th>
+            <th width="200">Last Name</th>
+            <th width="200">Email</th>
+            <th width="200">Phone Number</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
