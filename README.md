@@ -1,6 +1,8 @@
 Contact List App
 =============
 
+Sinatra based contact list app
+
 ## Getting Started
 
 1. `bundle install`
