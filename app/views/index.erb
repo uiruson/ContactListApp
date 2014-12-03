@@ -10,6 +10,18 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
+      <li class="has-form">
+        <form id="searchContactForm">
+          <div class="row collapse">
+            <div class="large-8 small-9 columns">
+              <input type="text" name="searchKeyword" placeholder="search contact" /> 
+            </div>
+            <div class="large-4 small-3 columns">
+              <input type="submit" class="alert button expand" />
+            </div>
+          </div>
+        </form>
+      </li>
       <li class="active" id="addNewContactButton"><a href="#">Add new Contact</a></li>
     </ul>
   </section>
@@ -18,33 +30,23 @@
 <br/>
 
 <div id="searchContactContainer">
-  <form id="searchContactForm">
-    <div class="row">
-      <div class="medium-6 large-centered columns">
-        <h4 id="errorMessage"></h4>
-      </div>
-      <div class="medium-6 large-centered columns">
-        <h3>Search Contact</h3>
-        <input type="text" name="searchKeyword" placeholder="search keyword" /> <input type="submit" class="button tiny" />
-      </div>
-      <div class="medium-8 large-centered columns" id="searchResult">
-        <h3>Search Result</h3>
-        <p id="noMatchesMessage"></p>
-        <table class="searchResultTable">
-        <thead>
-          <tr>
-            <th width="200">First Name</th>
-            <th width="200">Last Name</th>
-            <th width="200">Email</th>
-            <th width="200">Phone Number</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-      </div>
-    </div>
-  </form>
+  <div class="medium-8 large-centered columns" id="searchResult">
+    <h4 id="errorMessage"></h4>
+    <h3>Search Result</h3>
+    <p id="noMatchesMessage"></p>
+    <table class="searchResultTable">
+    <thead>
+      <tr>
+        <th width="200">First Name</th>
+        <th width="200">Last Name</th>
+        <th width="200">Email</th>
+        <th width="200">Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  </div>
 </div>
 
 

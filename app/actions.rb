@@ -1,5 +1,4 @@
 require 'pry'
-require 'sinatra/flash'
 # Homepage (Root path)
 get '/' do
   erb :index
@@ -10,6 +9,7 @@ get '/contacts' do
 end
 
 post '/contacts/create' do
+
   response = Hash.new
   response[:result] = false
   @user = User.where(email: params[:email])

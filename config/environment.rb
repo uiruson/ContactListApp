@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
-
+require 'sinatra/cross_origin'
 require 'active_support/all'
 
 # Load Sinatra Framework (with AR)
@@ -21,8 +21,9 @@ configure do
   set :session_secret, ENV['SESSION_KEY'] || 'lighthouselabssecret'
 
   set :views, File.join(Sinatra::Application.root, "app", "views")
+  enable :cross_origin
 end
-
+  
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
 
